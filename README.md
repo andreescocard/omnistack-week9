@@ -1,6 +1,6 @@
 # omnistack-week9
 
-Sobre: repositório com os códigos executados na semana omnistack 9, alterar no arquivo server.js a url de conexão do atlasdb para funcionar. 
+Sobre: Repositório com os códigos executados na semana omnistack 9, alterar no arquivo server.js a url de conexão do atlasdb para funcionar. 
 Abaixo algumas informações aleatórias que anotei para estudo próprio.
 
 _______________________________________________________________________________
