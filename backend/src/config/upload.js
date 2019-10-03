@@ -1,6 +1,7 @@
 const multer = require('multer');
 const path = require('path');
 
+//tratar caracteres especiais e espaços
 module.exports = {
     storage: multer.diskStorage({
         destination: path.resolve(__dirname, '..', '..', 'uploads'),
