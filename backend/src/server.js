@@ -2,6 +2,7 @@ const express = require('express'); //microframework dentro do node
 const mongoose = require('mongoose'); //user o mongoose
 const routes = require('./routes'); //caminho relativo para chamar o arquivo routes.js, n precisa da extensão
 const cors = require('cors');
+const path = require('path');
 
 const app = express();
 
@@ -21,7 +22,7 @@ mongoose.connect('MONGODBATLASURLCONNECTION', {
 
 app.use(cors());
 app.use(express.json());
-
+app.use('/files', express.static(path.resolve(__dirname, '../uploads/'))) //fazer imagem abrir
 app.use(routes);
 
 app.listen(3333); //roda o servidor na porta 3333

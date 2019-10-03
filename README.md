@@ -65,6 +65,7 @@ bd - vai usar mongo atlas - feito na web
 portquiz.net:27017 => testar porta
 //autenticacao JWT - ler sobre
 
+yarn dev - iniciar o backend
 _______________________________________________________________________________
 
 Aula 3
@@ -88,4 +89,16 @@ yarn add axios
 componentização e estado - ler
 desestrutração = ler
 
-Continuar após 48m
+yarn start - iniciar servidor frontend
+
+yarn add react-router-dom - biblioteca de rotas do react
+
+exact nas rotas - diferenciar das outras rotas
+
+fragment - tag html vazia <>
+
+history - usado para navegação
+
+{} - incluir código js no html
+
+{{  }} - incluir objecto no js
