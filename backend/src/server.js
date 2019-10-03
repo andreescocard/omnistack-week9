@@ -1,6 +1,7 @@
 const express = require('express'); //microframework dentro do node
 const mongoose = require('mongoose'); //user o mongoose
 const routes = require('./routes'); //caminho relativo para chamar o arquivo routes.js, n precisa da extensão
+const cors = require('cors');
 
 const app = express();
 
@@ -18,6 +19,7 @@ mongoose.connect('MONGODBATLASURLCONNECTION', {
 //req.param - acessar route params (para edição (PUT) e delete )
 //req.body - acessar corpo da requisição (para criação e edição de registros)
 
+app.use(cors());
 app.use(express.json());
 
 app.use(routes);
